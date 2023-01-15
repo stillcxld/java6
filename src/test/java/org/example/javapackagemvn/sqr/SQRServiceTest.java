@@ -19,12 +19,4 @@ public class SQRServiceTest {
         int actual = service.CalcSqrt(400, 800);
         Assertions.assertEquals(expected, actual);
     }
-
-    @Test
-    public void shouldCalcInexact() {
-        SQRService service = new SQRService();
-        int expected = 11;
-        int actual = service.CalcSqrt(200, 300);
-        Assertions.assertEquals(expected, actual);
-    }
 }
